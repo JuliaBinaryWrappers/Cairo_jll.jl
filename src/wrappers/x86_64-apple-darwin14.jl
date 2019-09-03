@@ -9,8 +9,6 @@ using X11_jll
 using LZO_jll
 using Zlib_jll
 ## Global variables
-const PATH_list = String[]
-const LIBPATH_list = String[]
 PATH = ""
 LIBPATH = ""
 LIBPATH_env = "DYLD_FALLBACK_LIBRARY_PATH"
@@ -37,21 +35,9 @@ function __init__()
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
+    append!.(Ref(PATH_list), (Pixman_jll.PATH_list, libpng_jll.PATH_list, Fontconfig_jll.PATH_list, Bzip2_jll.PATH_list, X11_jll.PATH_list, LZO_jll.PATH_list, Zlib_jll.PATH_list,))
+    append!.(Ref(LIBPATH_list), (Pixman_jll.LIBPATH_list, libpng_jll.LIBPATH_list, Fontconfig_jll.LIBPATH_list, Bzip2_jll.LIBPATH_list, X11_jll.LIBPATH_list, LZO_jll.LIBPATH_list, Zlib_jll.LIBPATH_list,))
 
-    append!(PATH_list, Pixman_jll.PATH_list)
-    append!(LIBPATH_list, Pixman_jll.LIBPATH_list)
-    append!(PATH_list, libpng_jll.PATH_list)
-    append!(LIBPATH_list, libpng_jll.LIBPATH_list)
-    append!(PATH_list, Fontconfig_jll.PATH_list)
-    append!(LIBPATH_list, Fontconfig_jll.LIBPATH_list)
-    append!(PATH_list, Bzip2_jll.PATH_list)
-    append!(LIBPATH_list, Bzip2_jll.LIBPATH_list)
-    append!(PATH_list, X11_jll.PATH_list)
-    append!(LIBPATH_list, X11_jll.LIBPATH_list)
-    append!(PATH_list, LZO_jll.PATH_list)
-    append!(LIBPATH_list, LZO_jll.LIBPATH_list)
-    append!(PATH_list, Zlib_jll.PATH_list)
-    append!(LIBPATH_list, Zlib_jll.LIBPATH_list)
     global libcairo_path = abspath(joinpath(artifact"Cairo", libcairo_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations

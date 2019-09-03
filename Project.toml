@@ -1,6 +1,6 @@
 name = "Cairo_jll"
 uuid = "83423d85-b0ee-5818-9007-b63ccbeb887a"
-version = "1.14.12+0"
+version = "1.14.12+1"
 
 [deps]
 X11_jll = "546b0b6d-9ca3-5ba2-8705-1bc1841d8479"
