@@ -4,6 +4,7 @@ export libcairo
 using Pixman_jll
 using libpng_jll
 using Fontconfig_jll
+using FreeType2_jll
 using Bzip2_jll
 using X11_jll
 using LZO_jll
@@ -35,8 +36,8 @@ function __init__()
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-    append!.(Ref(PATH_list), (Pixman_jll.PATH_list, libpng_jll.PATH_list, Fontconfig_jll.PATH_list, Bzip2_jll.PATH_list, X11_jll.PATH_list, LZO_jll.PATH_list, Zlib_jll.PATH_list,))
-    append!.(Ref(LIBPATH_list), (Pixman_jll.LIBPATH_list, libpng_jll.LIBPATH_list, Fontconfig_jll.LIBPATH_list, Bzip2_jll.LIBPATH_list, X11_jll.LIBPATH_list, LZO_jll.LIBPATH_list, Zlib_jll.LIBPATH_list,))
+    append!.(Ref(PATH_list), (Pixman_jll.PATH_list, libpng_jll.PATH_list, Fontconfig_jll.PATH_list, FreeType2_jll.PATH_list, Bzip2_jll.PATH_list, X11_jll.PATH_list, LZO_jll.PATH_list, Zlib_jll.PATH_list,))
+    append!.(Ref(LIBPATH_list), (Pixman_jll.LIBPATH_list, libpng_jll.LIBPATH_list, Fontconfig_jll.LIBPATH_list, FreeType2_jll.LIBPATH_list, Bzip2_jll.LIBPATH_list, X11_jll.LIBPATH_list, LZO_jll.LIBPATH_list, Zlib_jll.LIBPATH_list,))
 
     global libcairo_path = abspath(joinpath(artifact"Cairo", libcairo_splitpath...))
 
