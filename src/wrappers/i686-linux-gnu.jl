@@ -15,7 +15,7 @@ LIBPATH = ""
 LIBPATH_env = "LD_LIBRARY_PATH"
 
 # Relative path to `libcairo`
-const libcairo_splitpath = ["lib", "libcairo-script-interpreter.so"]
+const libcairo_splitpath = ["lib", "libcairo.so"]
 
 # This will be filled out by __init__() for all products, as it must be done at runtime
 libcairo_path = ""
@@ -25,7 +25,7 @@ libcairo_path = ""
 libcairo_handle = C_NULL
 
 # This must be `const` so that we can use it with `ccall()`
-const libcairo = "libcairo-script-interpreter.so.2"
+const libcairo = "libcairo.so.2"
 
 
 """
