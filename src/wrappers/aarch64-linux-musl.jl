@@ -48,21 +48,25 @@ const libcairo_gobject = "libcairo-gobject.so.2"
 Open all libraries
 """
 function __init__()
-    global prefix = abspath(joinpath(@__DIR__, ".."))
+    global artifact_dir = abspath(artifact"Cairo")
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-    append!.(Ref(PATH_list), (Glib_jll.PATH_list, Pixman_jll.PATH_list, libpng_jll.PATH_list, Fontconfig_jll.PATH_list, FreeType2_jll.PATH_list, Bzip2_jll.PATH_list, Xorg_libXext_jll.PATH_list, Xorg_libXrender_jll.PATH_list, LZO_jll.PATH_list, Zlib_jll.PATH_list,))
-    append!.(Ref(LIBPATH_list), (Glib_jll.LIBPATH_list, Pixman_jll.LIBPATH_list, libpng_jll.LIBPATH_list, Fontconfig_jll.LIBPATH_list, FreeType2_jll.LIBPATH_list, Bzip2_jll.LIBPATH_list, Xorg_libXext_jll.LIBPATH_list, Xorg_libXrender_jll.LIBPATH_list, LZO_jll.LIBPATH_list, Zlib_jll.LIBPATH_list,))
+    # We first need to add to LIBPATH_list the libraries provided by Julia
+    append!(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
+    # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
+    # then append them to our own.
+    foreach(p -> append!(PATH_list, p), (Glib_jll.PATH_list, Pixman_jll.PATH_list, libpng_jll.PATH_list, Fontconfig_jll.PATH_list, FreeType2_jll.PATH_list, Bzip2_jll.PATH_list, Xorg_libXext_jll.PATH_list, Xorg_libXrender_jll.PATH_list, LZO_jll.PATH_list, Zlib_jll.PATH_list,))
+    foreach(p -> append!(LIBPATH_list, p), (Glib_jll.LIBPATH_list, Pixman_jll.LIBPATH_list, libpng_jll.LIBPATH_list, Fontconfig_jll.LIBPATH_list, FreeType2_jll.LIBPATH_list, Bzip2_jll.LIBPATH_list, Xorg_libXext_jll.LIBPATH_list, Xorg_libXrender_jll.LIBPATH_list, LZO_jll.LIBPATH_list, Zlib_jll.LIBPATH_list,))
 
-    global libcairo_path = abspath(joinpath(artifact"Cairo", libcairo_splitpath...))
+    global libcairo_path = normpath(joinpath(artifact_dir, libcairo_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
     global libcairo_handle = dlopen(libcairo_path)
     push!(LIBPATH_list, dirname(libcairo_path))
 
-    global libcairo_gobject_path = abspath(joinpath(artifact"Cairo", libcairo_gobject_splitpath...))
+    global libcairo_gobject_path = normpath(joinpath(artifact_dir, libcairo_gobject_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
