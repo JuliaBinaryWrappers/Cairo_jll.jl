@@ -9,12 +9,13 @@ using FreeType2_jll
 using Bzip2_jll
 using LZO_jll
 using Zlib_jll
+using CompilerSupportLibraries_jll
 JLLWrappers.@generate_wrapper_header("Cairo")
 JLLWrappers.@declare_library_product(libcairo, "libcairo-2.dll")
 JLLWrappers.@declare_library_product(libcairo_gobject, "libcairo-gobject-2.dll")
 JLLWrappers.@declare_library_product(libcairo_script_interpreter, "libcairo-script-interpreter-2.dll")
 function __init__()
-    JLLWrappers.@generate_init_header(Glib_jll, Pixman_jll, libpng_jll, Fontconfig_jll, FreeType2_jll, Bzip2_jll, LZO_jll, Zlib_jll)
+    JLLWrappers.@generate_init_header(Glib_jll, Pixman_jll, libpng_jll, Fontconfig_jll, FreeType2_jll, Bzip2_jll, LZO_jll, Zlib_jll, CompilerSupportLibraries_jll)
     JLLWrappers.@init_library_product(
         libcairo,
         "bin\\libcairo-2.dll",
