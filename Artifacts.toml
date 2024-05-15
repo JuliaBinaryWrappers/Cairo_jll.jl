@@ -1,143 +1,143 @@
 [[Cairo]]
 arch = "aarch64"
-git-tree-sha1 = "fb8b9a86c16889fbeb669622623a954bb773fce8"
+git-tree-sha1 = "65d6651eacd881039e256d64c458d1ebd0101013"
 os = "macos"
 
     [[Cairo.download]]
-    sha256 = "17da289a6fa22c07ff9a27a02f722c045848dea77e5f72072af444bd79555fd6"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.aarch64-apple-darwin.tar.gz"
+    sha256 = "e43f91399fb3eba8d23576acd2c31e21813c93215b72144174e7d0b74868f466"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.aarch64-apple-darwin.tar.gz"
 [[Cairo]]
 arch = "aarch64"
-git-tree-sha1 = "f01e2946747b28a40c034a38cde151539df20678"
+git-tree-sha1 = "a9d0f1a0a736e57c0947dd4c7435a6a899c21a45"
 libc = "glibc"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "990edafd97730e3c6e8ee2f721aa365dcaafcea77f0d33a1da01046445736db0"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.aarch64-linux-gnu.tar.gz"
+    sha256 = "fcae0809b60a9cc9cf13817832904f55a06450e0c6a12e686dfa0ab898cb6903"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.aarch64-linux-gnu.tar.gz"
 [[Cairo]]
 arch = "aarch64"
-git-tree-sha1 = "b38ca35e381e6c35ce924d4f65a290b1b7331b6e"
+git-tree-sha1 = "73997de8c1312f1ca059dffccef8bb9aa14f3474"
 libc = "musl"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "eac7d7083ef36fa59f27f2965036e65d59a593231a9f96fc80304eb52c12240b"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.aarch64-linux-musl.tar.gz"
+    sha256 = "b5ed5166fe4d9bd94b9283b043786e90513f136cee3497b560034b5a4e0eca30"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.aarch64-linux-musl.tar.gz"
 [[Cairo]]
 arch = "armv6l"
 call_abi = "eabihf"
-git-tree-sha1 = "5820b75be734aeac9c78191f8f55e6ca21934082"
+git-tree-sha1 = "6970fb9733329aad05c53cb805b6a5733085259f"
 libc = "glibc"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "3183de0b8dfde845b5a837c1706f15bee5ec5527063e6134412e0941cf8575b3"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.armv6l-linux-gnueabihf.tar.gz"
+    sha256 = "48a1e969a4e95b7c8ada2248c2133a7beeb02e29b8146606fab5b5ae789c6d1a"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.armv6l-linux-gnueabihf.tar.gz"
 [[Cairo]]
 arch = "armv6l"
 call_abi = "eabihf"
-git-tree-sha1 = "fb1527b5424deccd9ee0ec0964432f78672e55df"
+git-tree-sha1 = "7aa8b6f30f9856e2283a82f9564f4e79fcbb9a23"
 libc = "musl"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "7f92ff4acf31e693391eca29e2137da1d0a843bccac201186f2b0a6afea351d9"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.armv6l-linux-musleabihf.tar.gz"
+    sha256 = "dad33da87f9f42b140dbe2b633b1f70dd255b413cc238300b6481b30bb66eeec"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.armv6l-linux-musleabihf.tar.gz"
 [[Cairo]]
 arch = "armv7l"
 call_abi = "eabihf"
-git-tree-sha1 = "bbc33799dfb6c19cd8c0084c909a3b12443f0570"
+git-tree-sha1 = "a0ed5eae023180158e04941f31fbb2564e22d1a1"
 libc = "glibc"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "58db2606e4b62ced63ec78d3fda60999482a2a24bcc27828fce5b9d951845b48"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.armv7l-linux-gnueabihf.tar.gz"
+    sha256 = "4d07f71609cbcd96fc07ef4fd60f877dd05ebcad40b8ccba7020414fb93de6e1"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.armv7l-linux-gnueabihf.tar.gz"
 [[Cairo]]
 arch = "armv7l"
 call_abi = "eabihf"
-git-tree-sha1 = "d7824cb623c66659786f3253f536b71b19557c74"
+git-tree-sha1 = "1f9c5908ed959f1ca08c48af5c9d14b981f70fc4"
 libc = "musl"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "65107709ee8090337b12afc8782d6a0665a7fae1978763fb5ca7d8a975ccc849"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.armv7l-linux-musleabihf.tar.gz"
+    sha256 = "cebf97492e4bb8f1f256f193b24454fafbb7251c345638bb3fb9d958106800a9"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.armv7l-linux-musleabihf.tar.gz"
 [[Cairo]]
 arch = "i686"
-git-tree-sha1 = "62c8473fa03bf22011e6bb71cccfcfb088526206"
+git-tree-sha1 = "72362f24191227ad52e2643dd95078fbe70c06fa"
 libc = "glibc"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "d0866bccf672ba02e6fc445ca00dd6e86c8d5b252c9f8f5e5dc79b97a4a80edb"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.i686-linux-gnu.tar.gz"
+    sha256 = "68ea66a4e5073125c18fc061803d52d3ca1870d62148f8c2b4af6d1ab57682a9"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.i686-linux-gnu.tar.gz"
 [[Cairo]]
 arch = "i686"
-git-tree-sha1 = "edf160044f851a6aef42b8af65d365df68a94b05"
+git-tree-sha1 = "25f4d68015b0a54dbf11897b7e7b8e80b831f5b7"
 libc = "musl"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "bb459868819332e79f7d86768804b5035492835d7707c879e0d273dec294cae8"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.i686-linux-musl.tar.gz"
+    sha256 = "7f85c8a6c43d12159370be96c845313c43b55734599e417e0b8d2fae60d8cfaa"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.i686-linux-musl.tar.gz"
 [[Cairo]]
 arch = "i686"
-git-tree-sha1 = "a7481c61864a76959afefccb5df4e05484476303"
+git-tree-sha1 = "7fc59cb5133580236349ab01cdbfe78f34cdb7ec"
 os = "windows"
 
     [[Cairo.download]]
-    sha256 = "7415ee2fd3e957d70588e542408065758195477b6feb5b1fe8af96d7ae3e7c1e"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.i686-w64-mingw32.tar.gz"
+    sha256 = "e1999c9eed96e7fb68f715b1be2d2bec8ae89d88774aaeb4d0691ca81311e9da"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.i686-w64-mingw32.tar.gz"
 [[Cairo]]
 arch = "powerpc64le"
-git-tree-sha1 = "0d9f937c4b39dbd2236a9101189e5cfdd1ff1e6b"
+git-tree-sha1 = "eb10a22977a887e6666f33d77b7c01cbf11cfde2"
 libc = "glibc"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "03f7e8f26da6e9b399ae95cd645f9f49603c5281fdf4ec972f562f33864160e3"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.powerpc64le-linux-gnu.tar.gz"
+    sha256 = "92523285677261555db677c3b6ad267396c0605f8610d248c1d272a73610af9e"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.powerpc64le-linux-gnu.tar.gz"
 [[Cairo]]
 arch = "x86_64"
-git-tree-sha1 = "7fab8ce1ef26551ce7ce2bf915603f2df5aa0419"
+git-tree-sha1 = "962c970ed3b6520e774fd8c1d1f916dbf9318a29"
 os = "macos"
 
     [[Cairo.download]]
-    sha256 = "f79c8e4bf7a46ba8fb839a9d030157ec16dc89407d88b7b38415d087421e97d7"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.x86_64-apple-darwin.tar.gz"
+    sha256 = "30ca0c0341cd4d6d0815a71a1fcb7c147b3505941a1564eadf1eef4c61069aaa"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.x86_64-apple-darwin.tar.gz"
 [[Cairo]]
 arch = "x86_64"
-git-tree-sha1 = "483b800129dc5270954d89e14ef5220b9f49838e"
+git-tree-sha1 = "4080957894c9e362c207c2d6248c691db444989b"
 libc = "glibc"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "f815b518dade53493c73c0b50ec120aa1ebc94cbb759777aa9ce187ab12163c9"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.x86_64-linux-gnu.tar.gz"
+    sha256 = "0488f0cd70adfe82c935c31a08b49dd75bfe0d3a790cd0f784159114438e8ac9"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.x86_64-linux-gnu.tar.gz"
 [[Cairo]]
 arch = "x86_64"
-git-tree-sha1 = "933a415c93779df24b870f4dd01b9911cc465db7"
+git-tree-sha1 = "0062c7d1d6aed66f81ef94ec8fb322284cbc6fe1"
 libc = "musl"
 os = "linux"
 
     [[Cairo.download]]
-    sha256 = "c1c00df02ebc97373acdf6b6c67d15965fafe70f672e089a8d18a912424a9e70"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.x86_64-linux-musl.tar.gz"
+    sha256 = "87aa86f25daecf6d8efe381cefe3716df3bd51318681851c2171a7c741c84997"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.x86_64-linux-musl.tar.gz"
 [[Cairo]]
 arch = "x86_64"
-git-tree-sha1 = "fb005c7b70595daa1d46d9e4c10b2c51a2e585cf"
+git-tree-sha1 = "fdcb437a16a0e3f47f20c503e4f639f702d65d8c"
 os = "freebsd"
 
     [[Cairo.download]]
-    sha256 = "16b3339404952f168085e200b0f6c71a0c7a9d22fd70d15e4b92ad8369be6c90"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.x86_64-unknown-freebsd.tar.gz"
+    sha256 = "b5f68d819bb3a706628c9cb890a018fbbeaa7fe5886c674b3d9f896fdd3df408"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.x86_64-unknown-freebsd.tar.gz"
 [[Cairo]]
 arch = "x86_64"
-git-tree-sha1 = "b6df688c291729924705aa4b5cd2282757329475"
+git-tree-sha1 = "ecbfd6700f61ef01a931bc7aad0fab7b7b696b1b"
 os = "windows"
 
     [[Cairo.download]]
-    sha256 = "ce6aae66bf5e57a7aa044e2ee2296d4a9acbdfe695f4fd847cbf39d07df38f04"
-    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+1/Cairo.v1.18.0.x86_64-w64-mingw32.tar.gz"
+    sha256 = "b89562680ae1bcbc695273ed045980097431cb5892fa137cdbf84c024c298cb1"
+    url = "https://github.com/JuliaBinaryWrappers/Cairo_jll.jl/releases/download/Cairo-v1.18.0+2/Cairo.v1.18.0.x86_64-w64-mingw32.tar.gz"
