@@ -1,6 +1,6 @@
 name = "Cairo_jll"
 uuid = "83423d85-b0ee-5818-9007-b63ccbeb887a"
-version = "1.18.4+0"
+version = "1.18.5+0"
 
 [deps]
 Zlib_jll = "83775a58-1f1d-513f-b197-d71354ab007a"
@@ -21,12 +21,12 @@ LZO_jll = "dd4b983a-f0e5-5f8d-a1b7-129d4a5fb1ac"
 [compat]
 Zlib_jll = "1.2.12"
 Libdl = "< 0.0.1, 1"
-Fontconfig_jll = "2.15.0"
+Fontconfig_jll = "2.16.0"
 Pixman_jll = "0.44.2"
-FreeType2_jll = "2.13.3"
+FreeType2_jll = "2.13.4"
 JLLWrappers = "1.7.0"
 Bzip2_jll = "1.0.9"
-Glib_jll = "2.82.4"
+Glib_jll = "2.84.0"
 Artifacts = "< 0.0.1, 1"
 julia = "1.6"
 libpng_jll = "1.6.47"
